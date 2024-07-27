@@ -16,7 +16,7 @@ team_members = [
     {
         "name": "Ankur Ray",
         "designation": "Software Engineer, DXA Solutions",
-        "image_path": "https://picsum.photos/200/300"
+        "image_path": "https://github.com/saranshbansal/rtfd/blob/master/static/images/ankur.jpeg?raw=true"
     },
     {
         "name": "Malvika Sharma",
