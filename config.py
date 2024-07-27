@@ -11,21 +11,21 @@ team_members = [
     {
         "name": "Saransh Bansal",
         "designation": "Development Manager, DXA Solutions",
+        "image_path": "https://github.com/saranshbansal/rtfd/blob/master/static/images/saransh.jpeg?raw=true"
+    },
+    {
+        "name": "Ankur Ray",
+        "designation": "Software Engineer, DXA Solutions",
         "image_path": "https://picsum.photos/200/300"
     },
     {
-        "name": "Bob Johnson",
-        "designation": "Product Manager",
+        "name": "Malvika Sharma",
+        "designation": "Scrum Master, DXA Solutions",
         "image_path": "https://picsum.photos/200/300"
     },
     {
-        "name": "Carol White",
-        "designation": "Designer",
-        "image_path": "https://picsum.photos/200/300"
-    },
-    {
-        "name": "David Lee",
-        "designation": "Data Scientist",
+        "name": "Avnish Shukla",
+        "designation": "Data Engineer, DXA Solutions",
         "image_path": "https://picsum.photos/200/300"
     }
 ]
