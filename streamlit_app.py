@@ -14,9 +14,10 @@ page_index = sidebar_options[selected_label]
 
 # Main content based on the selected page
 if page_index == 1:
+    st.header("Real-time Fraud Detection using ML")
     left_co, cent_co, last_co = st.columns(3)
     with cent_co:
-        st.image("static/images/cyber-theft-senior-fraud-GIF.gif", width=500)
+        st.image("static/images/cyber-theft-senior-fraud-GIF.gif", width=350)
     st.subheader("🗿 History")
     st.write("Ever since the advent of the internet, the digital revolution has permeated all aspects of our lives. "
              "One of the most significant impacts has been on the financial system, particularly in facilitating "
