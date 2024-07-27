@@ -9,19 +9,7 @@ st.sidebar.title("Real-time Fraud Detection using Machine Learning")
 selected_label = st.sidebar.selectbox("", list(sidebar_options.keys()))
 page_index = sidebar_options[selected_label]
 
-
 # Main content based on the selected page
-def img_to_base64(img):
-    """Convert PIL image to base64 for embedding in HTML"""
-    import base64
-    import io
-
-    buffered = io.BytesIO()
-    img.save(buffered, format="JPEG")
-    img_str = base64.b64encode(buffered.getvalue()).decode()
-    return img_str
-
-
 if page_index == 1:
     st.image("static/images/cyber-theft-senior-fraud-GIF.gif", width=500)
     st.write("Ever since the advent of the internet, the digital revolution has permeated all aspects of our lives. "
