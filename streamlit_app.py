@@ -14,7 +14,10 @@ page_index = sidebar_options[selected_label]
 
 # Main content based on the selected page
 if page_index == 1:
-    st.image("static/images/cyber-theft-senior-fraud-GIF.gif", width=500)
+    left_co, cent_co, last_co = st.columns(3)
+    with cent_co:
+        st.image("static/images/cyber-theft-senior-fraud-GIF.gif", width=500)
+    st.subheader("🗿 History")
     st.write("Ever since the advent of the internet, the digital revolution has permeated all aspects of our lives. "
              "One of the most significant impacts has been on the financial system, particularly in facilitating "
              "digital transactions worldwide. Digital transactions have become an integral part of daily life, "
@@ -22,6 +25,13 @@ if page_index == 1:
              "or investing. While these digital transactions offer numerous benefits, they also provide opportunities "
              "for fraudulent activities. Some individuals use digital transaction methods to launder money, "
              "making illicit funds appear to come from legitimate sources.")
+    st.subheader("📌 Objective")
+    st.write("The objective of this application is to find the patterns of transactions performed and "
+             "help algorithms learn those patterns in identifying the fraudulent transactions and flag them.")
+    st.subheader("🎯 Goals")
+    st.write("- Exploratory analysis of data to extract the pattern of fraudulent activities.")
+    st.write("- Build a machine learning model to classify fraud and non-fraud transactions.")
+    st.write("- Reduce the false negatives by tuning the model.")
 elif page_index == 2:
     st.title("Make Payments")
     st.subheader("This section allows users to make payments through various methods.")
@@ -68,15 +78,30 @@ elif page_index == 4:
     """, unsafe_allow_html=True)
     # Display team members in a grid layout
     st.markdown('<div class="team-container">', unsafe_allow_html=True)
-    for member in team_members:
-        # Load local image
-        img = member["image_path"]
-        # Display team member
-        st.markdown(f"""
-                <div class="team-member">
-                    <img src={img} alt="Alt Text" />
-                    <h3>{member['name']}</h3>
-                    <p>{member['designation']}</p>
-                </div>
-            """, unsafe_allow_html=True)
+    left_co, right_co = st.columns(2)
+    for index, member in enumerate(team_members, start=1):
+        if index < 3:
+            with left_co:
+                # Load local image
+                img = member["image_path"]
+                # Display team member
+                st.markdown(f"""
+                    <div class="team-member">
+                        <img src={img} alt="Alt Text" />
+                        <h3>{member['name']}</h3>
+                        <p>{member['designation']}</p>
+                    </div>
+                """, unsafe_allow_html=True)
+        else:
+            with right_co:
+                # Load local image
+                img = member["image_path"]
+                # Display team member
+                st.markdown(f"""
+                    <div class="team-member">
+                        <img src={img} alt="Alt Text" />
+                        <h3>{member['name']}</h3>
+                        <p>{member['designation']}</p>
+                    </div>
+                """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
