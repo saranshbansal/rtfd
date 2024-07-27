@@ -23,4 +23,4 @@ typing-extensions==4.12.2
 werkzeug==3.0.3
 wtforms==3.1.2
 zipp==3.19.2
-
+streamlit~=1.37.0

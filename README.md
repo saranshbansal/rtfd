@@ -12,15 +12,28 @@ This is a simple Flask web application that sets up rea-time fraud detection app
 
 1. Clone the repository:
 
-2. Navigate to the project directory
+    `git clone https://github.com/your-username/your-project.git`
 
-3. Create a virtual environment (optional but recommended)
+2. Navigate to the project directory:
+
+    `cd your-project`
+
+3. Create a virtual environment (optional but recommended):
+
+    `python -m venv env source env/bin/activate`
 
 4. Install the required dependencies:
-`pip install -r requirements.txt`
+
+    `pip install -r requirements.txt`
 
 5. Set up the environment variables (if applicable):
 
-6. Run the Flask application
+    `export SECRET_KEY=your-secret-key`
+
+    `export DATABASE_URL=your-database-url`
+
+6. Run the Flask application:
+
+    `flask run`
 
 The application should now be running at `http://localhost:5000`.
