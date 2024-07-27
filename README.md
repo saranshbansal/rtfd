@@ -7,7 +7,7 @@ Ever since the advent of internet the digital revolution has rising and has crep
 lives. One of the most important digital revolution happened in financial system and especially transacting money to
 someone from any part of the world digitally. Digital transactions have become a part of daily life like purchasing a
 product online, sending money to friends, depositing cash in bank account, investment purposes etc., They had a lot of
-benefits so does paved way for fraudulent activities. People started using digital money transactions medium to launder
+benefits so does pave way for fraudulent activities. People started using digital money transactions medium to launder
 money and make the money look like it comes from a legal source.
 
 ## 🎯 Objective
