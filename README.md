@@ -20,6 +20,10 @@ those patterns in identifying the fraudulent transactions and flag them.
 - Build a machine learning model to classify fraud and non-fraud transactions.
 - Reduce the false negatives by tuning the model.
 
+## 📁 Dataset
+The dataset used in this project is obtained from the file `PS_20174392719_1491204439457_log.csv`. 
+It contains transaction logs with various features including `step, type, amount, nameOrig, nameDest, isFlaggedFraud, and isFraud`.
+
 ## 📥 Installation
 
 1. Clone the repository:
@@ -44,8 +48,8 @@ those patterns in identifying the fraudulent transactions and flag them.
 
    `export DATABASE_URL=your-database-url`
 
-6. Run the Flask application:
+6. Run the Streamlit application:
 
-   `flask run`
+   `streamlit run streamlit_app.py`
 
 The application should now be running at `http://localhost:5000`.

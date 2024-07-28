@@ -29,3 +29,6 @@ team_members = [
         "image_path": "https://picsum.photos/200/300"
     }
 ]
+
+# Payment types
+pt = ['Cash transfer (IN)', 'Cash transfer (OUT)', 'DEBIT', 'PAYMENT', 'TRANSFER']
