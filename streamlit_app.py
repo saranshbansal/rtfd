@@ -27,20 +27,26 @@ if page_index == 1:
              "for fraudulent activities. Some individuals use digital transaction methods to launder money, "
              "making illicit funds appear to come from legitimate sources.")
     st.subheader("📌 Objective")
-    st.write("The objective of this application is to find the patterns of transactions performed and "
-             "help algorithms learn those patterns in identifying the fraudulent transactions and flag them.")
+    st.write("The objective of this application is to serve as a pluggable middleware that detects transaction "
+             "patterns and aids machine learning algorithms in identifying these patterns, thereby enabling the "
+             "real-time flagging of fraudulent transactions.")
     st.subheader("🎯 Goals")
-    st.write("- Exploratory analysis of data to extract the pattern of fraudulent activities.")
-    st.write("- Build a machine learning model to classify fraud and non-fraud transactions.")
-    st.write("- Reduce the false negatives by tuning the model.")
+    st.write("- Exploratory analysis of global data to extract the pattern of fraudulent activities.")
+    st.write("- Re-use/Build a machine learning model to classify fraud and non-fraud transactions.")
+    st.write("- Provide real-time feedback to end users about potential fraudulent transactions and ask for consent "
+             "before approving the transaction.")
+    st.write("- Reduce the false positives by feeding back customer responses and tuning the model.")
+    st.write("- Provide an end-user driven ruleset modification to support variety of domains.")
 elif page_index == 2:
-    st.title("Make Payments")
-    st.subheader("This section allows users to make payments through various methods.")
-    st.write("Users can enter payment details, select a payment method, and complete the transaction.")
+    st.title("Payments Simulator")
+    st.subheader("This section offers controls to simulate user-initiated payments, allowing for the assessment of "
+                 "potential fraud.")
+    st.write("You can adjust various parameters to simulate different scenarios, including both fraudulent and "
+             "legitimate transactions.")
 elif page_index == 3:
     st.title("Analytics")
-    st.subheader("This section provides insights and analytics related to fraud detection.")
-    st.write("It could include graphs, charts, or data visualizations.")
+    st.subheader("This section offers insights and analytics on fraud detection, leveraging historical transaction "
+                 "data and feedback from the model.")
 
     # Example: Display a line chart
     chart_data = pd.DataFrame(
