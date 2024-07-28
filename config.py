@@ -21,12 +21,12 @@ team_members = [
     {
         "name": "Malvika Sharma",
         "designation": "Scrum Master, DXA Solutions",
-        "image_path": "https://picsum.photos/200/300"
+        "image_path": "https://github.com/saranshbansal/rtfd/blob/master/static/images/Malvika.jpg?raw=true"
     },
     {
         "name": "Avnish Shukla",
         "designation": "Data Engineer, DXA Solutions",
-        "image_path": "https://picsum.photos/200/300"
+        "image_path": "https://github.com/saranshbansal/rtfd/blob/master/static/images/Avnish.jpg?raw=true"
     }
 ]
 
