@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from config import sidebar_options, team_members, pt
 
 # Cool tab icon
-st.set_page_config(page_title="RTFD - BoA", page_icon=":money_with_wings:", layout="wide")
+st.set_page_config(page_title="RTFD - BoA", page_icon=":money_with_wings:")
 
 # Sidebar menu
 st.sidebar.title("Real-time Fraud Detection using Machine Learning")
