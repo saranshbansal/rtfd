@@ -5,6 +5,7 @@ import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 
 from config import sidebar_options, team_members, pt
+from model.simulations import df, fig
 
 # Cool tab icon
 st.set_page_config(page_title="RTFD - BoA", page_icon=":money_with_wings:")
@@ -124,11 +125,9 @@ elif page_index == 3:
     st.subheader("This section offers insights and analytics on fraud detection, leveraging historical transaction "
                  "data and feedback from the model.")
 
-    # Example: Display a line chart
-    chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
-        columns=['a', 'b', 'c'])
-    st.line_chart(chart_data)
+    # Plot simulated data
+    st.pyplot(fig)
+
 elif page_index == 4:
     st.title("Meet the team")
     st.markdown("""
