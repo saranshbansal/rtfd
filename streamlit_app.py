@@ -4,8 +4,8 @@ import pandas as pd
 import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 
-from config import sidebar_options, team_members, pt
-from model.simulations import fig
+from config import sidebar_options, team_members, pt, model_evaluations
+from model.simulations import fig, df
 
 # Page config
 st.set_page_config(page_title="RTFD - BoA", page_icon=":money_with_wings:")
@@ -46,6 +46,7 @@ def predict(data):
 if page_index == 1:
     st.header("Real-time Fraud Detection using ML")
     st.image("static/images/cyber-theft-senior-fraud-GIF.gif", width=500)
+
     st.subheader("🗿 History")
     st.write('''
             Ever since the advent of the internet, the digital revolution has permeated all aspects of our lives. 
@@ -129,6 +130,16 @@ elif page_index == 3:
     st.pyplot(fig)
 
 elif page_index == 4:
+    st.title("Dataset")
+    st.subheader("This section offers insights and analytics on dataset used to train the model.")
+
+    st.caption("First few rows of the processed dataframe")
+    st.table(df.head())
+
+    st.caption("Evaluating accuracy of different classifiers")
+    st.table(pd.DataFrame(model_evaluations))
+
+elif page_index == 5:
     st.title("Meet the team")
     st.markdown("""
         <style>
