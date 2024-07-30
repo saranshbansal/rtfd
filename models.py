@@ -13,7 +13,7 @@ import joblib
 
 plt.style.use('seaborn')
 
-# Read the dataset
+# Read the dataset (Only available locally due to size restrictions in GitHub)
 df = pd.read_csv('dataset/PS_20174392719_1491204439457_log.csv')
 
 # Preprocessing steps...

@@ -37,3 +37,7 @@ ax.legend()
 plt.grid()
 plt.xticks(rotation=45)
 plt.tight_layout()
+
+# Adding caption
+fig.text(0.5, -0.1, 'The graph above demonstrates the simulated transactions over time, with fraudulent activities '
+                    'represented by red lines and legitimate transactions by green lines.', ha='center', fontsize=10)

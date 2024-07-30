@@ -1,6 +1,6 @@
 # Real-time Fraud Detection using Machine Learning
 
-This is a Flask web application for real-time fraud detection using machine learning algorithms.
+This is a Streamlit application for showcasing real-time fraud detection using machine learning algorithms.
 
 ## 🗿 History
 Ever since the advent of internet the digital revolution has rising and has crept into all aspects to our

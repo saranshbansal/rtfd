@@ -5,13 +5,14 @@ import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 
 from config import sidebar_options, team_members, pt
-from model.simulations import df, fig
+from model.simulations import fig
 
-# Cool tab icon
+# Page config
 st.set_page_config(page_title="RTFD - BoA", page_icon=":money_with_wings:")
 
 # Sidebar menu
 st.sidebar.title("Real-time Fraud Detection using Machine Learning")
+st.sidebar.caption("by Team FinAPI")
 selected_label = st.sidebar.selectbox("Menu", list(sidebar_options.keys()))
 page_index = sidebar_options[selected_label]
 
@@ -124,6 +125,7 @@ elif page_index == 3:
     st.title("Analytics")
     st.subheader("This section offers insights and analytics on fraud detection, leveraging historical transaction "
                  "data and feedback from the model.")
+    st.info("Please note that the data is intended for simulation purposes only and is not dynamically generated.")
 
     # Plot simulated data
     st.pyplot(fig)
