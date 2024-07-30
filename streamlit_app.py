@@ -49,21 +49,21 @@ if page_index == 1:
 
     st.subheader("🗿 History")
     st.write('''
-            Ever since the advent of the internet, the digital revolution has permeated all aspects of our lives. 
-            One of the most significant impacts has been on the financial system, particularly in facilitating 
-            digital transactions worldwide. Digital transactions have become an integral part of daily life, 
-            whether purchasing products online, sending money to friends, depositing cash into bank accounts, 
-            or investing. While these digital transactions offer numerous benefits, they also provide opportunities 
-            for fraudulent activities. Some individuals use digital transaction methods to launder money, 
-            making illicit funds appear to come from legitimate sources.
-    ''')
+			With the advent of digital transactions, the possibility of money laundering have also soared up with 
+			the use of tech. Millions of investigators are on the field fighting against the fraudulent transactions. In the 
+			current industry we have a large inflow of false positives hits and it consumes a long time to clear the false 
+			positive hits. Customers across the world using fintech platforms demand lightning fast services. Hence 
+			automating the hits with machine learning and reducing the false positive hits is our aim. But not at the cost of 
+			leaving out the false negatives. Hence we need to be more mindful about false negatives when we try to reduce the 
+			false positives.
+	''')
     st.subheader("📌 Objective")
     st.write('''
-             The objective of this project is to serve as a pluggable middleware that detects transaction 
-             patterns and aids machine learning algorithms in identifying these patterns, thereby enabling the 
-             real-time flagging of fraudulent transactions. It utilizes a dataset containing transaction records and 
-             aims to build models that can accurately classify fraudulent transactions.
-    ''')
+			 The objective of this project is to serve as a pluggable middleware that detects transaction 
+			 patterns and aids machine learning algorithms in identifying these patterns, thereby enabling the 
+			 real-time flagging of fraudulent transactions. It utilizes a dataset containing transaction records and 
+			 aims to build models that can accurately classify fraudulent transactions.
+	''')
     st.subheader("🎯 Goals")
     st.write("- Exploratory analysis of global data to extract the pattern of fraudulent activities.")
     st.write("- Re-use/Build a machine learning model to classify fraud and non-fraud transactions.")
@@ -142,33 +142,33 @@ elif page_index == 4:
 elif page_index == 5:
     st.title("Meet the team")
     st.markdown("""
-        <style>
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .team-member {
-            text-align: center;
-            margin: 20px;
-        }
-        .team-member img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .team-member h3 {
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-        .team-member p {
-            margin-top: 5px;
-            color: grey;
-            font-size: 1em;
-        }
-        </style>
-    """, unsafe_allow_html=True)
+		<style>
+		.team-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.team-member {
+			text-align: center;
+			margin: 20px;
+		}
+		.team-member img {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+		}
+		.team-member h3 {
+			margin-top: 10px;
+			font-size: 1.2em;
+		}
+		.team-member p {
+			margin-top: 5px;
+			color: grey;
+			font-size: 1em;
+		}
+		</style>
+	""", unsafe_allow_html=True)
     # Display team members in a grid layout
     st.markdown('<div class="team-container">', unsafe_allow_html=True)
     left_co, right_co = st.columns(2)
@@ -179,22 +179,22 @@ elif page_index == 5:
                 img = member["image_path"]
                 # Display team member
                 st.markdown(f"""
-                    <div class="team-member">
-                        <img src={img} alt="Alt Text" />
-                        <h3>{member['name']}</h3>
-                        <p>{member['designation']}</p>
-                    </div>
-                """, unsafe_allow_html=True)
+					<div class="team-member">
+						<img src={img} alt="Alt Text" />
+						<h3>{member['name']}</h3>
+						<p>{member['designation']}</p>
+					</div>
+				""", unsafe_allow_html=True)
         else:
             with right_co:
                 # Load local image
                 img = member["image_path"]
                 # Display team member
                 st.markdown(f"""
-                    <div class="team-member">
-                        <img src={img} alt="Alt Text" />
-                        <h3>{member['name']}</h3>
-                        <p>{member['designation']}</p>
-                    </div>
-                """, unsafe_allow_html=True)
+					<div class="team-member">
+						<img src={img} alt="Alt Text" />
+						<h3>{member['name']}</h3>
+						<p>{member['designation']}</p>
+					</div>
+				""", unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
