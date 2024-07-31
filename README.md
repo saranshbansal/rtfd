@@ -21,10 +21,11 @@ those patterns in identifying the fraudulent transactions and flag them.
 - Reduce the false negatives by tuning the model.
 
 ## 📁 Dataset
-The dataset used in this project is obtained from the file `PS_20174392719_1491204439457_log.csv`. 
+The dataset used in this project is obtained from the file [PS_20174392719_1491204439457_log.csv](https://www.kaggle.com/datasets/ealaxi/paysim1). 
 It contains transaction logs with various features including `step, type, amount, nameOrig, nameDest, isFlaggedFraud, and isFraud`.
 
-### Dataset description¶
+### Dataset description
+
 `step` - maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation).
 
 `type` - CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER.

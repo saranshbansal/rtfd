@@ -71,6 +71,11 @@ if page_index == 1:
              "before approving the transaction.")
     st.write("- Reduce the false positives by feeding back customer responses and tuning the model.")
     st.write("- Provide an end-user driven ruleset modification to support variety of domains.")
+
+    st.subheader("📁 Dataset")
+    st.write("The dataset used in this project is obtained from: https://www.kaggle.com/datasets/ealaxi/paysim1. It "
+             "contains transaction logs with various features including `step, type, amount, nameOrig, nameDest, "
+             "isFlaggedFraud, and isFraud`.")
 elif page_index == 2:
     st.title("Payments Simulator")
     st.subheader("This section offers controls to simulate user-initiated payments, allowing for the assessment of "
@@ -105,14 +110,15 @@ elif page_index == 2:
             st.warning("Our analysis indicates a significant risk of fraud based on the algorithm's findings.")
 
             # Customer consent to block or approve transaction
-            st.write("Would you like to block the transaction?")
+            st.write("Would you like to place a request to block the transaction?")
             confirm = st.checkbox("Yes, I am sure")
             reject = st.checkbox("No")
 
             if confirm and reject:
                 st.warning("Please select only one option.")
             elif confirm:
-                st.write("Transaction blocked by user.")
+                st.write("Transaction block request raised successfully. Our team will review the request and take "
+                         "appropriate action.")
             elif reject:
                 st.write("Transaction complete!")
             else:
@@ -131,7 +137,8 @@ elif page_index == 3:
 
 elif page_index == 4:
     st.title("Dataset")
-    st.subheader("This section offers insights and analytics on dataset used to train the model.")
+    st.subheader("This section offers insights and analytics on dataset used to train the model. The dataset used in "
+                 "this project is obtained from: https://www.kaggle.com/datasets/ealaxi/paysim1.")
 
     st.caption("First few rows of the processed dataframe")
     st.table(df.head())
