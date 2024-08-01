@@ -1,6 +1,10 @@
 # Real-time Fraud Detection using Machine Learning
 
+![alt text](static/images/rtfd_base.gif)
+
 This is a Streamlit application for showcasing real-time fraud detection using machine learning algorithms.
+
+https://real-time-fraud-detection.streamlit.app/
 
 ## 🗿 History
 Ever since the advent of internet the digital revolution has rising and has crept into all aspects to our
@@ -77,3 +81,10 @@ It contains transaction logs with various features including `step, type, amount
    `streamlit run streamlit_app.py`
 
 The application should now be running at `http://localhost:5000`.
+
+## Screens
+![alt text](static/images/app_5.png)
+![alt text](static/images/app_4.png)
+![alt text](static/images/app_3.png)
+![alt text](static/images/app_2.png)
+![alt text](static/images/app_1.png)
