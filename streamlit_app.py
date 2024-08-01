@@ -87,9 +87,9 @@ elif page_index == 2:
     _type = st.selectbox(label='Select payment type', options=pt)
     step = st.slider('Step', min_value=1)
     amount = st.number_input('Amount', min_value=0.0)
-    oldbalanceOrg = st.number_input('Old Balance Origin')
+    oldbalanceOrg = st.number_input('Source Account')
     newbalanceOrig = oldbalanceOrg - amount
-    oldbalanceDest = st.number_input('Old Balance Destination')
+    oldbalanceDest = st.number_input('Destination Account')
     newbalanceDest = oldbalanceDest + amount
 
     # Create a df from the input data

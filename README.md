@@ -80,7 +80,7 @@ It contains transaction logs with various features including `step, type, amount
 
    `streamlit run streamlit_app.py`
 
-The application should now be running at `http://localhost:5000`.
+The application should now be running at `http://localhost:8502`.
 
 ## Screens
 ![alt text](static/images/app_5.png)
